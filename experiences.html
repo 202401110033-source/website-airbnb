@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiences & Services | Airbnb</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="main-nav shadow-sm">
+    <!-- Top row: Logo, Tabs/Search, Profile -->
+    <div class="nav-top">
+      <div class="nav-inner">
+        <a class="brand-logo" href="index.html">
+          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M16 4C10.477 4 6 8.477 6 14c0 4.418 2.865 8.169 6.857 9.498C14.143 24.428 15.06 28 16 28s1.857-3.572 3.143-4.502C23.135 22.169 26 18.418 26 14c0-5.523-4.477-10-10-10z"
+              fill="var(--primary)" />
+            <circle cx="16" cy="14" r="4" fill="#fff" />
+          </svg>
+          <span>Airbnb</span>
+        </a>
+        <!-- Tabs in center (hidden on scroll) -->
+        <div class="header-tabs">
+          <a href="index.html" class="tab-btn">🏠 Homes</a>
+          <a href="experiences.html" class="tab-btn active">🎈 Experiences <span class="tab-badge">NEW</span></a>
+          <a href="services.html" class="tab-btn">🏠 Services <span class="tab-badge">NEW</span></a>
+        </div>
+        <!-- Compact search (shown on scroll) -->
+        <div class="nav-compact-search" id="navCompactSearch">
+          <span class="cs-seg">Anywhere</span>
+          <div class="cs-divider"></div>
+          <span class="cs-seg">Anytime</span>
+          <div class="cs-divider"></div>
+          <span class="cs-seg">Add guests</span>
+          <button class="cs-icon" aria-label="Search"><i class="fas fa-search"></i></button>
+        </div>
+        <!-- Profile section on right -->
+        <div class="nav-links">
+          <button type="button">Become a host</button>
+          <button type="button" aria-label="Choose a language and currency"><i class="fas fa-globe"></i></button>
+          <div class="nav-profile" id="profileDropTrigger">
+            <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
+            <div class="profile-dropdown" id="profileDropdown">
+              <a class="pd-item" href="#"><i class="fas fa-question-circle" style="color:#888;width:18px;"></i> Help
+                Centre</a>
+              <div class="pd-divider"></div>
+              <a class="pd-item" href="#">Refer a host</a>
+              <a class="pd-item" href="#">Find a co-host</a>
+              <div class="pd-divider"></div>
+              <a class="pd-item pd-bold" href="#">Log in or sign up</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Search bar row (hidden on scroll) -->
+    <div class="nav-search">
+      <div class="nav-inner search-inner">
+        <div class="search-pill" id="navSearchPill">
+          <div class="search-seg"><strong>Where</strong><span>Search destinations</span></div>
+          <div class="search-seg"><strong>When</strong><span>Add dates</span></div>
+          <div class="search-seg"><strong>Who</strong><span>Add guests</span></div>
+          <button class="search-action"><i class="fas fa-search"></i></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <section class="experience-section bg-light">
+    <div class="container">
+      <h2 class="section-title">Experiences you'll love</h2>
+      <p class="section-sub">Book guided activities hosted by local experts.</p>
+      <div class="scroll-section-wrapper">
+        <button class="h-scroll-btn scroll-left hidden-btn" data-target="expGrid"><i
+            class="fas fa-chevron-left"></i></button>
+        <div class="exp-grid" id="expGrid"></div>
+        <button class="h-scroll-btn scroll-right" data-target="expGrid"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience-section" id="servicesSection">
+    <div class="container">
+      <h2 class="section-title">Services at your stay</h2>
+      <p class="section-sub">Book trusted local services to make your trip even easier.</p>
+      <div class="scroll-section-wrapper">
+        <button class="h-scroll-btn scroll-left hidden-btn" data-target="svcGrid"><i class="fas fa-chevron-left"></i></button>
+        <div class="exp-grid" id="svcGrid"></div>
+        <button class="h-scroll-btn scroll-right" data-target="svcGrid"><i class="fas fa-chevron-right"></i></button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-col-title">Support</div>
+          <a href="#" class="footer-link">Help Centre</a>
+          <a href="#" class="footer-link">Get help with a safety issue</a>
+          <a href="#" class="footer-link">AirCover</a>
+          <a href="#" class="footer-link">Anti-discrimination</a>
+          <a href="#" class="footer-link">Disability support</a>
+          <a href="#" class="footer-link">Cancellation options</a>
+          <a href="#" class="footer-link">Report neighbourhood concern</a>
+        </div>
+        <div>
+          <div class="footer-col-title">Hosting</div>
+          <a href="#" class="footer-link">Airbnb your home</a>
+          <a href="#" class="footer-link">Airbnb your experience</a>
+          <a href="#" class="footer-link">Airbnb your service</a>
+          <a href="#" class="footer-link">AirCover for Hosts</a>
+          <a href="#" class="footer-link">Hosting resources</a>
+          <a href="#" class="footer-link">Community forum</a>
+          <a href="#" class="footer-link">Hosting responsibly</a>
+          <a href="#" class="footer-link">Join a free hosting class</a>
+          <a href="#" class="footer-link">Find a co‑host</a>
+          <a href="#" class="footer-link">Refer a host</a>
+        </div>
+        <div>
+          <div class="footer-col-title">Airbnb</div>
+          <a href="#" class="footer-link">2026 Summer Release</a>
+          <a href="#" class="footer-link">Newsroom</a>
+          <a href="#" class="footer-link">Careers</a>
+          <a href="#" class="footer-link">Investors</a>
+          <a href="#" class="footer-link">Airbnb.org emergency stays</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Airbnb, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a href="#">Company details</a>
+        </div>
+        <div class="footer-social">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-up" id="scrollUp"><i class="fas fa-arrow-up"></i></button>
+  <div class="toast-stack" id="toastStack"></div>
+  <div class="modal-overlay" id="searchModal">
+    <div class="modal-box">
+      <div class="modal-header">
+        <div class="modal-title">Find your perfect experience</div>
+        <button class="modal-close" id="closeSearch"><i class="fas fa-times"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group"><label>Where</label><input type="text" placeholder="Anywhere" id="modalWhere"></div>
+        <div class="row g-3">
+          <div class="col-md-6 form-group"><label>Check in</label><input type="date" id="modalCheckin"></div>
+          <div class="col-md-6 form-group"><label>Check out</label><input type="date" id="modalCheckout"></div>
+        </div>
+        <button class="modal-submit" id="doSearchModal">Search</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
