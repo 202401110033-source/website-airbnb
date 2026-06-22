@@ -27,9 +27,9 @@
         </a>
         <!-- Tabs in center (hidden on scroll) -->
         <div class="header-tabs">
-          <a href="index.html" class="tab-btn">🏠 Homes</a>
-          <a href="experiences.html" class="tab-btn active">🎈 Experiences <span class="tab-badge">NEW</span></a>
-          <a href="services.html" class="tab-btn">🏠 Services <span class="tab-badge">NEW</span></a>
+          <a href="index.html" class="tab-btn"> Homes</a>
+          <a href="experiences.html" class="tab-btn active"> Experiences <span class="tab-badge">NEW</span></a>
+          <a href="services.html" class="tab-btn"> Services <span class="tab-badge">NEW</span></a>
         </div>
         <!-- Compact search (shown on scroll) -->
         <div class="nav-compact-search" id="navCompactSearch">
@@ -70,6 +70,11 @@
         </div>
       </div>
     </div>
+    <div class="nav-tabs-row">
+      <a href="index.html" class="tab-btn"> Homes</a>
+      <a href="experiences.html" class="tab-btn active"> Experiences <span class="tab-badge">NEW</span></a>
+      <a href="services.html" class="tab-btn"> Services <span class="tab-badge">NEW</span></a>
+    </div>
   </nav>
 
   <section class="experience-section bg-light">
@@ -85,7 +90,7 @@
     </div>
   </section>
 
-  <section class="experience-section" id="servicesSection">
+  <!-- <section class="experience-section" id="servicesSection">
     <div class="container">
       <h2 class="section-title">Services at your stay</h2>
       <p class="section-sub">Book trusted local services to make your trip even easier.</p>
@@ -94,7 +99,7 @@
         <div class="exp-grid" id="svcGrid"></div>
         <button class="h-scroll-btn scroll-right" data-target="svcGrid"><i class="fas fa-chevron-right"></i></button>
       </div>
-    </div>
+    </div> -->
   </section>
 
   <footer class="footer">
@@ -155,10 +160,7 @@
       </div>
       <div class="modal-body">
         <div class="form-group"><label>Where</label><input type="text" placeholder="Anywhere" id="modalWhere"></div>
-        <div class="row g-3">
-          <div class="col-md-6 form-group"><label>Check in</label><input type="date" id="modalCheckin"></div>
-          <div class="col-md-6 form-group"><label>Check out</label><input type="date" id="modalCheckout"></div>
-        </div>
+        <div class="form-group"><label>When</label><input type="date" id="modalDate"></div>
         <button class="modal-submit" id="doSearchModal">Search</button>
       </div>
     </div>
