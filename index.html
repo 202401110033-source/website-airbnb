@@ -18,28 +18,27 @@
       <div class="nav-inner">
         <a class="brand-logo" href="index.html">
           <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M16 4C10.477 4 6 8.477 6 14c0 4.418 2.865 8.169 6.857 9.498C14.143 24.428 15.06 28 16 28s1.857-3.572 3.143-4.502C23.135 22.169 26 18.418 26 14c0-5.523-4.477-10-10-10z"
-              fill="var(--primary)" />
+            <path d="M16 4C10.477 4 6 8.477 6 14c0 4.418 2.865 8.169 6.857 9.498C14.143 24.428 15.06 28 16 28s1.857-3.572 3.143-4.502C23.135 22.169 26 18.418 26 14c0-5.523-4.477-10-10-10z" fill="var(--primary)" />
             <circle cx="16" cy="14" r="4" fill="#fff" />
           </svg>
           <span>Airbnb</span>
         </a>
+
         <!-- Tabs in center (hidden on scroll) -->
         <div class="header-tabs">
-          <a href="index.html" class="tab-btn active">🏠 Homes</a>
-          <a href="experiences.html" class="tab-btn">🎈 Experiences <span class="tab-badge">NEW</span></a>
-          <a href="services.html" class="tab-btn">🏠 Services <span class="tab-badge">NEW</span></a>
+          <a href="index.html" class="tab-btn active"> Homes</a>
+          <a href="experiences.html" class="tab-btn"> Experiences <span class="tab-badge">NEW</span></a>
+          <a href="services.html" class="tab-btn"> Services <span class="tab-badge">NEW</span></a>
         </div>
+
         <!-- Compact search (shown on scroll) -->
         <div class="nav-compact-search" id="navCompactSearch">
           <span class="cs-seg">Anywhere</span>
-          <div class="cs-divider"></div>
           <span class="cs-seg">Anytime</span>
-          <div class="cs-divider"></div>
           <span class="cs-seg">Add guests</span>
           <button class="cs-icon" aria-label="Search"><i class="fas fa-search"></i></button>
         </div>
+
         <!-- Profile section on right -->
         <div class="nav-links">
           <button type="button">Become a host</button>
@@ -47,18 +46,17 @@
           <div class="nav-profile" id="profileDropTrigger">
             <span class="hamburger-icon"><i class="fas fa-bars"></i></span>
             <div class="profile-dropdown" id="profileDropdown">
-              <a class="pd-item" href="#"><i class="fas fa-question-circle" style="color:#888;width:18px;"></i> Help
-                Centre</a>
-              <div class="pd-divider"></div>
+              <a class="pd-item" href="#"><i class="fas fa-question-circle" style="color:#888;width:18px;"></i> Help Centre</a>
               <a class="pd-item" href="#">Refer a host</a>
               <a class="pd-item" href="#">Find a co-host</a>
-              <div class="pd-divider"></div>
               <a class="pd-item pd-bold" href="#">Log in or sign up</a>
             </div>
           </div>
         </div>
+
       </div>
     </div>
+
     <!-- Search bar row (hidden on scroll) -->
     <div class="nav-search">
       <div class="nav-inner search-inner">
@@ -70,7 +68,13 @@
         </div>
       </div>
     </div>
+    <!-- <div class="nav-tabs-row">
+      <a href="index.html" class="tab-btn active"> Homes</a>
+      <a href="experiences.html" class="tab-btn"> Experiences <span class="tab-badge">NEW</span></a>
+      <a href="services.html" class="tab-btn"> Services <span class="tab-badge">NEW</span></a>
+    </div> -->
   </nav>
+
   <section class="listings-section" id="listingsSection">
     <div class="container">
       <div class="filter-strip">
@@ -81,7 +85,7 @@
       <div id="listingGroupsContainer"></div>
     </div>
   </section>
-  <section class="experience-section bg-light">
+  <!-- <section class="experience-section bg-light">
     <div class="container">
       <h2 class="section-title">Experiences you’ll love</h2>
       <p class="section-sub">Book guided activities hosted by local experts.</p>
@@ -103,31 +107,32 @@
         <button class="h-scroll-btn scroll-right" data-target="svcGrid"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
-  </section>
+  </section> -->
+
   <section class="dest-section">
     <div class="container">
       <h2 class="section-title">Explore nearby destinations</h2>
       <p class="section-sub">Discover places within a few hours of you.</p>
       <div class="scroll-section-wrapper">
-        <button class="h-scroll-btn scroll-left hidden-btn" data-target="destGrid"><i
-            class="fas fa-chevron-left"></i></button>
+        <button class="h-scroll-btn scroll-left hidden-btn" data-target="destGrid"><i class="fas fa-chevron-left"></i></button>
         <div class="dest-grid" id="destGrid"></div>
         <button class="h-scroll-btn scroll-right" data-target="destGrid"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
+
   <section class="reviews-section bg-light">
     <div class="container">
       <h2 class="section-title">Guests love Airbnb</h2>
       <p class="section-sub">Real feedback from travelers all over the world.</p>
       <div class="scroll-section-wrapper">
-        <button class="h-scroll-btn scroll-left hidden-btn" data-target="revGrid"><i
-            class="fas fa-chevron-left"></i></button>
+        <button class="h-scroll-btn scroll-left hidden-btn" data-target="revGrid"><i class="fas fa-chevron-left"></i></button>
         <div class="rev-grid" id="revGrid"></div>
         <button class="h-scroll-btn scroll-right" data-target="revGrid"><i class="fas fa-chevron-right"></i></button>
       </div>
     </div>
   </section>
+  
   <section class="trust-section">
     <div class="container">
       <h2 class="section-title text-center">Why travelers choose Airbnb</h2>
@@ -157,16 +162,15 @@
       </div>
     </div>
   </section>
+
   <section class="host-banner bg-dark text-white">
     <div class="container">
       <div class="row align-items-center gy-4">
         <div class="col-lg-7">
           <p class="hero-eyebrow text-white">Hosting with Airbnb</p>
           <h2 class="hero-headline" style="color:#fff;">Turn your space into income</h2>
-          <p class="hero-text" style="color:rgba(255,255,255,.8);max-width:620px;">Join millions of hosts sharing their
-            homes and earning on their own schedule. We make hosting easy with flexible tools and support.</p>
-          <a href="#" class="hero-cta" style="background:#fff;color:var(--text-main);">Become a host <i
-              class="fas fa-arrow-right"></i></a>
+          <p class="hero-text" style="color:rgba(255,255,255,.8);max-width:620px;">Join millions of hosts sharing their homes and earning on their own schedule. We make hosting easy with flexible tools and support.</p>
+          <a href="#" class="hero-cta" style="background:#fff;color:var(--text-main);">Become a host <i class="fas fa-arrow-right"></i></a>
         </div>
         <div class="col-lg-5">
           <div class="host-card"
@@ -176,6 +180,7 @@
       </div>
     </div>
   </section>
+
   <footer class="footer">
     <div class="container footer-inner">
       <div class="footer-grid">
@@ -208,7 +213,7 @@
           <a href="#" class="footer-link">Newsroom</a>
           <a href="#" class="footer-link">Careers</a>
           <a href="#" class="footer-link">Investors</a>
-          <a href="#" class="footer-link">Airbnb.org emergency stays</a>
+          <a href="#" class="footer-link">Airbnb.org Emergency Stays</a>
         </div>
       </div>
       <div class="footer-bottom">
@@ -224,7 +229,9 @@
     </div>
   </footer>
   <button class="scroll-up" id="scrollUp"><i class="fas fa-arrow-up"></i></button>
+
   <div class="toast-stack" id="toastStack"></div>
+
   <div class="modal-overlay" id="searchModal">
     <div class="modal-box">
       <div class="modal-header">
@@ -232,11 +239,8 @@
         <button class="modal-close" id="closeSearch"><i class="fas fa-times"></i></button>
       </div>
       <div class="modal-body">
-        <div class="form-group"><label>Where</label><input type="text" placeholder="Anywhere" id="modalWhere"></div>
-        <div class="row g-3">
-          <div class="col-md-6 form-group"><label>Check in</label><input type="date" id="modalCheckin"></div>
-          <div class="col-md-6 form-group"><label>Check out</label><input type="date" id="modalCheckout"></div>
-        </div>
+        <div class="form-group"><label>Where</label><input type="text" placeholder="Enter Place Name" id="modalWhere"></div>
+        <div class="form-group"><label>When</label><input type="date" id="modalDate"></div>
         <div class="row g-3">
           <div class="col-md-6 form-group"><label>Adults</label>
             <select id="modalAdults">
@@ -259,6 +263,7 @@
       </div>
     </div>
   </div>
+
   <div class="modal-overlay" id="filterModal">
     <div class="modal-box">
       <div class="modal-header">
@@ -267,8 +272,10 @@
       </div>
       <div class="modal-body">
         <div class="form-group"><label>Price range (per night)</label>
-          <div class="d-flex gap-2 flex-wrap"><input type="number" placeholder="Min ₹" id="minPrice"
-              style="flex:1;"><input type="number" placeholder="Max ₹" id="maxPrice" style="flex:1;"></div>
+          <div class="d-flex gap-2 flex-wrap">
+            <input type="number" placeholder="Min ₹" id="minPrice" style="flex:1;">
+            <input type="number" placeholder="Max ₹" id="maxPrice" style="flex:1;">
+          </div>
         </div>
         <div class="form-group"><label>Minimum rating</label>
           <select id="minRating">
